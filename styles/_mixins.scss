@@ -1,0 +1,26 @@
+@mixin heading {
+  color: $primary-color;
+  font-size: clamp(4rem, 5vw + 2rem, 8rem);
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: "Bebas Neue", cursive;
+}
+
+@mixin layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  border-top: 3px solid $contrast-color;
+  padding: 50px 20px;
+}
+
+@mixin action-btn {
+  padding:10px 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: $contrast-color;
+  color: $white;
+  cursor: pointer;
+  border: 3px solid $contrast-color;
+  border-radius: 5px;
+  font-family: "Bebas Neue", cursive;
+}

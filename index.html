@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Cameron Weijmer</title>
+  </head>
+
+  <body>
+    <!-- Container  -->
+    <div class="container" id="content">
+      <!-- header  -->
+      <header class="header">
+        <!-- nav  -->
+        <nav class="nav">
+          <h1 class="logo">Cameron Weijmer</h1>
+          <!-- nav ul  -->
+          <ul class="nav-ul">
+            <!-- item  -->
+            <li class="item">
+              <!-- link  -->
+              <a href="#about">about</a>
+            </li>
+            <!-- item  -->
+            <li class="item">
+              <!-- link  -->
+              <a href="#projects">projects</a>
+            </li>
+            <!-- item  -->
+            <li class="item">
+              <!-- link  -->
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main  -->
+      <main class="main">
+        <!-- landing  -->
+        <div class="landing">
+          <div class="wrapper">
+            <h1 class="heading animate">Cameron</h1>
+            <h1 class="heading animate">Weijmer</h1>
+            <p class="text">Application Developer</p>
+          </div>
+          <a class="action-btn" href="#contact">lets connect</a>
+        </div>
+
+        <!-- about  -->
+        <div id="about" class="about">
+          <h1 class="heading">about</h1>
+          <!-- wrapper  -->
+          <div class="wrapper">
+            <!-- left  -->
+            <div class="left">
+              <p class="text">
+                I am a full stack web developer with a passion for creating
+                beautiful, functional, and user-friendly websites. I have a
+                strong background in web development and have worked with a
+                variety of technologies and languages. I'm currently learning
+                SAP ABAP. I really like programming and being creative. I think
+                computer science is the future, so I always want to develop my
+                skills. I love to play tennis and I am playing piano and
+                ukulele.
+              </p>
+            </div>
+            <!-- right  -->
+            <div class="right">
+              <img src="./assets/cameron.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- projects -->
+        <div id="projects" class="projects">
+          <!-- heading  -->
+          <h1 class="heading">recent projects</h1>
+          <!-- cards  -->
+          <div class="cards">
+            <!-- card  -->
+            <div class="card">
+              <!-- icon  -->
+              <div class="icon">
+                <img src="./assets/cryptowebsite.png" alt="" />
+              </div>
+              <!-- title  -->
+              <h1 class="title">Crypto Status</h1>
+              <!-- text  -->
+              <p class="text">
+                My project is about making a website where you can check the
+                exact state of different coins. There will also be a option to
+                Convert Coins My goal is to make this website as user-friendly
+                as possible, so that every user of my website can check the
+                status of the coins without any obstacles.
+              </p>
+            </div>
+            <!-- card  -->
+            <div class="card">
+              <!-- icon  -->
+              <div class="icon">
+                <img src="./assets/burgertown.png" alt="" />
+              </div>
+              <!-- title  -->
+              <h1 class="title">burger town</h1>
+              <!-- text  -->
+              <p class="text">
+                Welcome to Burger Town! A small chain of restaurants located in
+                two cities in Puerto Rico & still growing! Come enjoy delicious
+                food & a family-friendly ...
+              </p>
+            </div>
+            <!-- card  -->
+            <div class="card">
+              <!-- icon  -->
+              <div class="icon">
+                <img src="./assets/quotes.png" alt="" />
+              </div>
+              <!-- title  -->
+              <h1 class="title">Insult Api</h1>
+              <!-- text  -->
+              <p class="text">
+                Generate Insult​​ This is endpoint serves to generate insults
+                from the API. type - The response type. It supports text , XML
+                and JSON
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact  -->
+        <div id="contact" class="contact">
+          <!-- heading  -->
+          <h1 class="heading">contact</h1>
+          <!-- form  -->
+          <form class="form">
+            <!-- form control  -->
+            <div class="form-control">
+              <input type="text" required placeholder="NAME" />
+            </div>
+            <!-- form control  -->
+            <div class="form-control">
+              <input type="email" required placeholder="EMAIL" />
+            </div>
+            <!-- form control  -->
+            <div class="form-control">
+              <input type="tel" required placeholder="PHONE" />
+            </div>
+            <!-- form control  -->
+            <div class="form-control">
+              <textarea placeholder="MESSAGE" cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- form control  -->
+            <div class="form-control">
+              <button class="action-btn">submit</button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <p class="text">© Copyright Cameron Weijmer 2022.</p>
+      </footer>
+    </div>
+  </body>
+
+  <!-- Scripts  -->
+
+  <script src="https://unpkg.com/split-type"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/app.js"></script>
+</html>
