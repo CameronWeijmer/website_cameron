@@ -9,13 +9,25 @@ gsap.to(".char", {
   duration: 0.5,
 });
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-  content: "#content",
-  smooth: 3, // seconds it takes to "catch up" to native scroll position
-  effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
+let connect_btn = gsap.timeline({
+  scrollTrigger: {
+    trigger: document.body,
+    start: 0,
+    end: () => window.innerHeight * 1.2,
+    scrub: 0.6,
+  },
 });
-
-smoother.effects("img", { speed: "auto" });
+connect_btn.to(
+  ".animate",
+  {
+    top: "25vh",
+    xPercent: 10,
+    scale: 2,
+  },
+  {
+    top: 0,
+    yPercent: 0,
+    scale: 1,
+    duration: 0.8,
+  }
+);
