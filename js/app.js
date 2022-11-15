@@ -9,25 +9,29 @@ gsap.to(".char", {
   duration: 0.5,
 });
 
-let connect_btn = gsap.timeline({
+// let connect_btn = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: document.body,
+//     start: 0,
+//     end: () => window.innerHeight * 1.2,
+//     scrub: 0.6,
+//   },
+// });
+// connect_btn.to(".animate", {
+//   scale: 1.5,
+// });
+
+const tl = gsap.timeline({
   scrollTrigger: {
-    trigger: document.body,
-    start: 0,
-    end: () => window.innerHeight * 1.2,
-    scrub: 0.6,
+    trigger: ".landing",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
   },
 });
-connect_btn.to(
-  ".animate",
-  {
-    top: "25vh",
-    xPercent: 10,
-    scale: 2,
-  },
-  {
-    top: 0,
-    yPercent: 0,
-    scale: 1,
-    duration: 0.8,
-  }
-);
+
+gsap.utils.toArray(".parallax").forEach((layer) => {
+  const depth = layer.dataset.depth;
+  const movement = -(layer.offsetHeight * depth);
+  tl.to(layer, { y: movement, ease: "none" }, 0);
+});
