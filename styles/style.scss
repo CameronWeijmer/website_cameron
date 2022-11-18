@@ -96,6 +96,12 @@
     .action-btn {
       @include action-btn;
       text-decoration: none;
+      border: none;
+      &:hover {
+        background: $primary-color;
+        color: $black;
+        transition: 0.75s ease-in-out;
+      }
     }
   }
   // about
@@ -234,6 +240,22 @@
       justify-content: center;
     }
   }
+
+  .main{
+    .landing{
+      .action-btn{
+        padding: 8px 12px;
+        font-size: 28px;
+      }
+      .wrapper{
+        .text{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
   .main {
     .about {
       .heading {
@@ -243,7 +265,6 @@
         flex-direction: column;
         justify-content: center;
         gap: 50px;
-
         .left {
           .text {
             text-align: center;
@@ -254,7 +275,7 @@
         }
       }
     }
-    .projects{
+    .projects {
       .heading {
         text-align: center;
       }
