@@ -90,6 +90,12 @@
   border-radius: 5px;
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
+  border: none;
+}
+.main .landing .action-btn:hover {
+  background: #f4e409;
+  color: #000;
+  transition: 0.75s ease-in-out;
 }
 .main .about {
   max-width: 1440px;
@@ -238,6 +244,13 @@
     gap: 40px;
     flex-direction: column;
     justify-content: center;
+  }
+  .main .landing .action-btn {
+    padding: 8px 12px;
+    font-size: 28px;
+  }
+  .main .landing .wrapper .text {
+    font-size: 16px;
   }
   .main .about .heading {
     text-align: center;
