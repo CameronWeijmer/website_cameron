@@ -66,9 +66,12 @@ const project = gsap.timeline({
     scrub: true,
   },
 });
-
-gsap.utils.toArray(".proj_parallax").forEach((layer) => {
-  const depth = layer.dataset.depth;
-  const movement = -(layer.offsetHeight * depth);
-  project.to(layer, { y: movement, ease: "none" }, 0);
+ScrollTrigger.matchMedia({
+  "(min-width:1280px)": function () {
+    gsap.utils.toArray(".proj_parallax").forEach((layer) => {
+      const depth = layer.dataset.depth;
+      const movement = -(layer.offsetHeight * depth);
+      project.to(layer, { y: movement, ease: "none" }, 0);
+    });
+  },
 });

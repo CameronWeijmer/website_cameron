@@ -134,7 +134,7 @@
 }
 .main .projects .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   flex-wrap: wrap;
   gap: 20px;
@@ -233,7 +233,7 @@
   font-family: "Bebas Neue", cursive;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
   .header .nav {
     gap: 40px;
     flex-direction: column;
@@ -251,6 +251,9 @@
     text-align: center;
   }
   .main .about .wrapper .right {
+    text-align: center;
+  }
+  .main .projects .heading {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

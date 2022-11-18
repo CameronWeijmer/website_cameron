@@ -132,7 +132,7 @@
     }
     .cards {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       position: relative;
       flex-wrap: wrap;
       gap: 20px;
@@ -226,7 +226,7 @@
 }
 
 // Media queries
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
   .header {
     .nav {
       gap: 40px;
@@ -252,6 +252,11 @@
         .right {
           text-align: center;
         }
+      }
+    }
+    .projects{
+      .heading {
+        text-align: center;
       }
     }
   }
