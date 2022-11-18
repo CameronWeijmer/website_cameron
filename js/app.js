@@ -18,11 +18,11 @@ gsap.from(".appli_dev", {
   delay: 2,
 });
 
-gsap.from(".hidden_animation", {
-  opacity: 0,
-  duration: 3,
-  delay: 3.5,
-});
+// gsap.from(".hidden_animation", {
+//   opacity: 0,
+//   duration: 2.5,
+//   delay: 3,
+// });
 
 const landing = gsap.timeline({
   scrollTrigger: {
@@ -41,37 +41,69 @@ gsap.utils.toArray(".parallax").forEach((layer) => {
 
 //About
 
-const about = gsap.timeline({
+gsap.from(".hidden_animation", {
   scrollTrigger: {
-    trigger: ".about_text",
-    start: "top top",
-    end: "bottom top",
-    scrub: true,
+    trigger: ".hidden_animation",
+    start: "top center",
+    end: "bottom bottom",
   },
+  opacity: 0,
+  duration: 1.75,
 });
 
-gsap.utils.toArray(".parallax_about").forEach((layer) => {
-  const depth = layer.dataset.depth;
-  const movement = -(layer.offsetHeight * depth);
-  about.to(layer, { y: movement, ease: "none" }, 0);
-});
+// const about = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".about_text",
+//     start: "top top",
+//     end: "bottom top",
+//     scrub: true,
+//   },
+// });
+
+// gsap.utils.toArray(".parallax_about").forEach((layer) => {
+//   const depth = layer.dataset.depth;
+//   const movement = -(layer.offsetHeight * depth);
+//   about.to(layer, { y: movement, ease: "none" }, 0);
+// });
 
 //Projects
 
-const project = gsap.timeline({
+gsap.from(".proj_parallax", {
   scrollTrigger: {
-    trigger: ".recent_trigger",
-    start: "top top",
-    end: "bottom top",
-    scrub: true,
+    trigger: ".proj_parallax",
+    start: "top center",
+    end: "bottom bottom",
   },
+  opacity: 0,
+  duration: 1.75,
 });
-ScrollTrigger.matchMedia({
-  "(min-width:1280px)": function () {
-    gsap.utils.toArray(".proj_parallax").forEach((layer) => {
-      const depth = layer.dataset.depth;
-      const movement = -(layer.offsetHeight * depth);
-      project.to(layer, { y: movement, ease: "none" }, 0);
-    });
+
+//Contact
+
+gsap.from(".contact_animation", {
+  scrollTrigger: {
+    trigger: ".contact_animation",
+    start: "top center",
+    end: "bottom bottom",
   },
+  opacity: 0,
+  duration: 2,
 });
+
+// const project = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".recent_trigger",
+//     start: "top top",
+//     end: "bottom top",
+//     scrub: true,
+//   },
+// });
+// ScrollTrigger.matchMedia({
+//   "(min-width:1280px)": function () {
+//     gsap.utils.toArray(".proj_parallax").forEach((layer) => {
+//       const depth = layer.dataset.depth;
+//       const movement = -(layer.offsetHeight * 2);
+//       project.to(layer, { y: movement, ease: "none" }, 0);
+//     });
+//   },
+// });
