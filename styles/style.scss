@@ -1,7 +1,7 @@
 // Importing scss files
 @import "./variables";
 @import "./mixins";
-
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 // Default styles
 * {
   padding: 0;
@@ -65,18 +65,22 @@
     display: grid;
     place-items: center;
     padding: 50px 0px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Michroma', sans-serif;
     .wrapper {
       display: grid;
       text-align: center;
       place-items: center;
       padding: 10px;
+      font-size: 20px;
       .heading {
         color: $primary-color;
-        font-size: clamp(4rem, 5vw + 5rem, 10rem);
-        line-height: 90%;
+        font-size: clamp(3rem, 3vw + 6rem, 8rem);
+        line-height:100%;
         text-transform: uppercase;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+      .description_name{
+        padding: 20px 0px 20px 0px;
       }
 
       .char {

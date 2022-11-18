@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@400;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
@@ -20,7 +18,7 @@
     <div class="wrapper" id="wrapper">
 
       <!-- header  -->
-      <header class="header">
+      <header class="header appli_dev">
         <!-- nav  -->
         <nav class="nav">
           <h1 class="logo">Cameron Weijmer</h1>
@@ -49,95 +47,100 @@
 
       <main class="main">
         <!-- landing  -->
-        <div class="landing parallax" data-depth="0.20">
-          <div class="wrapper parallax" data-depth="0.60">
+        <div class="landing parallax" data-depth="0.50">
+          <div class="wrapper parallax" data-depth="0.50">
             <h1 class="heading animate" id="animate">Cameron</h1>
             <h1 class="heading animate" id="animate">Weijmer</h1>
-            <p class="text">Application Developer</p>
-          </div>
-          <div class="commect_button_div parallax" data-depth="1.00">
-            <a class="action-btn big-btn" href="#contact">lets connect</a>
-          </div>
-        </div>
-
-
-        <!-- about  -->
-        <div id="about" class="about">
-          <h1 class="heading about_heading">about</h1>
-          <!-- wrapper  -->
-          <div class="wrapper">
-            <!-- left  -->
-            <div class="left">
-              <p class="text">
-                I am a full stack web developer with a passion for creating
-                beautiful, functional, and user-friendly websites. I have a
-                strong background in web development and have worked with a
-                variety of technologies and languages. I'm currently learning
-                SAP ABAP. I really like programming and being creative. I think
-                computer science is the future, so I always want to develop my
-                skills. I love to play tennis and I am playing piano and
-                ukulele.
-              </p>
+            <div class="description_name parallax appli_dev" data-depth="0.50">
+              <p class="text">Application Developer</p>
             </div>
-            <!-- right  -->
-            <div class="right">
-              <img id="cameron_bild" src="./assets/cameron.jpg" alt="" />
-            </div>
+          </div>
+          <div class="commect_button_div parallax" data-depth="0.50">
+            <a class="action-btn big-btn hidden_animation" href="#contact">lets connect</a>
           </div>
         </div>
 
-        <!-- projects -->
-        <div id="projects" class="projects">
-          <!-- heading  -->
-          <h1 class="heading" id="projectid">recent projects</h1>
-          <!-- cards  -->
-          <div class="cards">
-            <!-- card  -->
-            <div class="card">
-              <!-- icon  -->
-              <div class="icon">
-                <img src="./assets/cryptowebsite.png" alt="" />
+        <div class="hidden_animation">
+          <!-- about  -->
+          <div id="about" class="about parallax_about">
+            <h1 class="heading about_heading">about</h1>
+            <!-- wrapper  -->
+            <div class="wrapper parallax_about" data-depth="0.40">
+              <!-- left  -->
+              <div class="left parallax_about" data-depth="0.20">
+                <p class="text about_text">
+                  I am a full stack web developer with a passion for creating
+                  beautiful, functional, and user-friendly websites. I have a
+                  strong background in web development and have worked with a
+                  variety of technologies and languages. I'm currently learning
+                  SAP ABAP. I really like programming and being creative. I think
+                  computer science is the future, so I always want to develop my
+                  skills. I love to play tennis and I am playing piano and
+                  ukulele.
+                </p>
               </div>
-              <!-- title  -->
-              <h1 class="title">Crypto Status</h1>
-              <!-- text  -->
-              <p class="text">
-                My project is about making a website where you can check the
-                exact state of different coins. There will also be a option to
-                Convert Coins My goal is to make this website as user-friendly
-                as possible, so that every user of my website can check the
-                status of the coins without any obstacles.
-              </p>
+              <!-- right  -->
+              <div class="right parallax_about" data-depth="0.20">
+                <img id="cameron_bild" src="./assets/cameron.jpg" alt="" />
+              </div>
             </div>
-            <!-- card  -->
-            <div class="card">
-              <!-- icon  -->
-              <div class="icon">
-                <img src="./assets/burgertown.png" alt="" />
+          </div>
+
+
+
+          <!-- projects -->
+          <div id="projects" class="projects proj_parallax">
+            <!-- heading  -->
+            <h1 class="heading proj_parallax recent_trigger" id="projectid" data-depth="0.20">recent projects</h1>
+            <!-- cards  -->
+            <div class="cards proj_parallax" data-depth="0.20">
+              <!-- card  -->
+              <div class="card proj_parallax" data-depth="0.20">
+                <!-- icon  -->
+                <div class="icon proj_parallax">
+                  <img src="./assets/cryptowebsite.png" alt="" />
+                </div>
+                <!-- title  -->
+                <h1 class="title">Crypto Status</h1>
+                <!-- text  -->
+                <p class="text">
+                  My project is about making a website where you can check the
+                  exact state of different coins. There will also be a option to
+                  Convert Coins My goal is to make this website as user-friendly
+                  as possible, so that every user of my website can check the
+                  status of the coins without any obstacles.
+                </p>
               </div>
-              <!-- title  -->
-              <h1 class="title">burger town</h1>
-              <!-- text  -->
-              <p class="text">
-                Welcome to Burger Town! A small chain of restaurants located in
-                two cities in Puerto Rico & still growing! Come enjoy delicious
-                food & a family-friendly ...
-              </p>
-            </div>
-            <!-- card  -->
-            <div class="card">
-              <!-- icon  -->
-              <div class="icon">
-                <img src="./assets/quotes.png" alt="" />
+              <!-- card  -->
+              <div class="card proj_parallax">
+                <!-- icon  -->
+                <div class="icon proj_parallax">
+                  <img src="./assets/burgertown.png" alt="" />
+                </div>
+                <!-- title  -->
+                <h1 class="title">burger town</h1>
+                <!-- text  -->
+                <p class="text">
+                  Welcome to Burger Town! A small chain of restaurants located in
+                  two cities in Puerto Rico & still growing! Come enjoy delicious
+                  food & a family-friendly ...
+                </p>
               </div>
-              <!-- title  -->
-              <h1 class="title">Insult Api</h1>
-              <!-- text  -->
-              <p class="text">
-                Generate Insult​​ This is endpoint serves to generate insults
-                from the API. type - The response type. It supports text , XML
-                and JSON
-              </p>
+              <!-- card  -->
+              <div class="card proj_parallax" data-depth="0.20">
+                <!-- icon  -->
+                <div class="icon proj_parallax">
+                  <img src="./assets/quotes.png" alt="" />
+                </div>
+                <!-- title  -->
+                <h1 class="title">Insult Api</h1>
+                <!-- text  -->
+                <p class="text">
+                  Generate Insult​​ This is endpoint serves to generate insults
+                  from the API. type - The response type. It supports text , XML
+                  and JSON
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +150,7 @@
           <!-- heading  -->
           <h1 class="heading">contact</h1>
           <!-- form  -->
-          <form class="form">
+          <form class="form contact_animate">
             <!-- form control  -->
             <div class="form-control">
               <input type="text" required placeholder="NAME" />
@@ -171,6 +174,7 @@
             </div>
           </form>
         </div>
+
       </main>
 
       <!-- footer  -->
