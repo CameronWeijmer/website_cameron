@@ -61,7 +61,7 @@
 }
 .main .landing .wrapper .heading {
   color: #f4e409;
-  font-size: clamp(3rem, 3vw + 6rem, 8rem);
+  font-size: clamp(2rem, 5vw + 1rem, 8rem);
   line-height: 100%;
   text-transform: uppercase;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -76,7 +76,7 @@
 }
 .main .landing .wrapper .text {
   color: #f4e409;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .main .landing .action-btn {
@@ -116,7 +116,7 @@
   line-height: 2rem;
 }
 .main .about .wrapper .right img {
-  max-width: 350px;
+  width: clamp(250px, 50vw + 100px, 400px);
   border-radius: 5px;
 }
 .main .projects {
