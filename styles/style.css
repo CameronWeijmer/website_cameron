@@ -195,6 +195,9 @@
   justify-content: center;
   gap: 20px;
 }
+.main .contact .form .form-control {
+  text-transform: lowercase;
+}
 .main .contact .form .form-control input {
   width: 100%;
   padding: 20px 0px;
