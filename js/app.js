@@ -1,6 +1,12 @@
 // Varaibles
 const text = new SplitType(".animate");
+// const form = document.getElementById("form");
 
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
 // Animation
 
 //Title
