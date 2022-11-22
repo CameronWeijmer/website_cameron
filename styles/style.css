@@ -113,13 +113,14 @@
 .main .about .wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
   font-family: "Darker Grotesque", sans-serif;
 }
 .main .about .wrapper .left .text {
   color: #fff;
   font-size: 1.5rem;
   line-height: 2rem;
+  padding-top: 75px;
 }
 .main .about .wrapper .right img {
   width: clamp(250px, 50vw + 100px, 400px);
@@ -140,10 +141,11 @@
 }
 .main .projects .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
   flex-wrap: wrap;
   gap: 20px;
+  padding-top: 75px;
 }
 .main .projects .cards .card {
   max-width: 400px;
@@ -188,6 +190,7 @@
   font-weight: 900;
   text-transform: capitalize;
   font-family: "Bebas Neue", cursive;
+  padding-top: 75px;
 }
 .main .contact .form {
   display: flex;
@@ -195,10 +198,7 @@
   justify-content: center;
   gap: 20px;
 }
-.main .contact .form .form-control {
-  text-transform: lowercase;
-}
-.main .contact .form .form-control input {
+.main .contact .form input {
   width: 100%;
   padding: 20px 0px;
   text-indent: 20px;
@@ -209,7 +209,43 @@
   font-family: "Bebas Neue", cursive;
   color: #f4e409;
 }
-.main .contact .form .form-control textarea {
+.main .contact .form input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #f4e409;
+}
+.main .contact .form input::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: blue;
+}
+.main .contact .form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #f4e409;
+  opacity: 1;
+}
+.main .contact .form input:-moz-placeholder:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: blue;
+  opacity: 1;
+}
+.main .contact .form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #f4e409;
+  opacity: 1;
+}
+.main .contact .form input::-moz-placeholder:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: blue;
+  opacity: 1;
+}
+.main .contact .form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f4e409;
+}
+.main .contact .form input:-ms-input-placeholder:focus:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: blue;
+}
+.main .contact .form textarea {
   width: 100%;
   padding: 20px 0px;
   text-indent: 20px;
@@ -220,7 +256,43 @@
   font-family: "Bebas Neue", cursive;
   color: #f4e409;
 }
-.main .contact .form .form-control .action-btn {
+.main .contact .form textarea::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #f4e409;
+}
+.main .contact .form textarea::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: blue;
+}
+.main .contact .form textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #f4e409;
+  opacity: 1;
+}
+.main .contact .form textarea:-moz-placeholder:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: blue;
+  opacity: 1;
+}
+.main .contact .form textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #f4e409;
+  opacity: 1;
+}
+.main .contact .form textarea::-moz-placeholder:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: blue;
+  opacity: 1;
+}
+.main .contact .form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f4e409;
+}
+.main .contact .form textarea:-ms-input-placeholder:focus:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: blue;
+}
+.main .contact .form .action-btn {
   padding: 10px 20px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -233,15 +305,22 @@
   width: 100%;
 }
 
-.footer .text {
+.footer .text,
+.footer .footer_link {
   color: #fff;
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 2rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px;
+  padding-top: 20px;
   font-family: "Bebas Neue", cursive;
+}
+.footer .top {
+  padding: 15px 0px 15px 0px;
+}
+.footer a:link {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 860px) {
@@ -273,5 +352,12 @@
   }
   .main .projects .heading {
     text-align: center;
+  }
+  .footer .text {
+    font-size: 15px;
+    padding-top: 0px;
+  }
+  .footer .footer_link {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
