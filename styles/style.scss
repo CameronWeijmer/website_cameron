@@ -207,6 +207,7 @@
           background: transparent;
           border-radius: 5px;
           font-family: "Bebas Neue", cursive;
+          color: $primary-color;
         }
         .action-btn {
           @include action-btn;
