@@ -204,6 +204,7 @@
   background: transparent;
   border-radius: 5px;
   font-family: "Bebas Neue", cursive;
+  color: #f4e409;
 }
 .main .contact .form .form-control textarea {
   width: 100%;
