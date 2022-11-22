@@ -51,21 +51,6 @@ gsap.from(".hidden_animation", {
   duration: 1.75,
 });
 
-// const about = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".about_text",
-//     start: "top top",
-//     end: "bottom top",
-//     scrub: true,
-//   },
-// });
-
-// gsap.utils.toArray(".parallax_about").forEach((layer) => {
-//   const depth = layer.dataset.depth;
-//   const movement = -(layer.offsetHeight * depth);
-//   about.to(layer, { y: movement, ease: "none" }, 0);
-// });
-
 //Projects
 
 gsap.from(".proj_parallax", {
@@ -75,7 +60,7 @@ gsap.from(".proj_parallax", {
     end: "bottom bottom",
   },
   opacity: 0,
-  duration: 1.75,
+  duration: 1.25,
 });
 
 //Contact
@@ -87,23 +72,5 @@ gsap.from(".contact_animation", {
     end: "bottom bottom",
   },
   opacity: 0,
-  duration: 2,
+  duration: 1.75,
 });
-
-// const project = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".recent_trigger",
-//     start: "top top",
-//     end: "bottom top",
-//     scrub: true,
-//   },
-// });
-// ScrollTrigger.matchMedia({
-//   "(min-width:1280px)": function () {
-//     gsap.utils.toArray(".proj_parallax").forEach((layer) => {
-//       const depth = layer.dataset.depth;
-//       const movement = -(layer.offsetHeight * 2);
-//       project.to(layer, { y: movement, ease: "none" }, 0);
-//     });
-//   },
-// });
