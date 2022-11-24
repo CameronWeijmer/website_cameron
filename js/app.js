@@ -24,12 +24,6 @@ gsap.from(".appli_dev", {
   delay: 2,
 });
 
-// gsap.from(".hidden_animation", {
-//   opacity: 0,
-//   duration: 2.5,
-//   delay: 3,
-// });
-
 const landing = gsap.timeline({
   scrollTrigger: {
     trigger: ".landing",
