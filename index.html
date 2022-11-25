@@ -19,12 +19,15 @@
   <!-- Container  -->
 
   <div class="container" id="container">
+
     <div class="wrapper" id="wrapper">
       <!-- header  -->
       <header class="header appli_dev">
         <!-- nav  -->
         <nav class="nav">
-          <h1 class="logo">Cameron Weijmer</h1>
+          <div class="left">
+            <img src="./assets/logo.png" alt="">
+          </div>
           <!-- nav ul  -->
           <ul class="nav-ul">
             <!-- item  -->
@@ -83,7 +86,7 @@
               </div>
               <!-- right  -->
               <div class="right parallax_about" data-depth="0.20">
-                <img id="cameron_bild" src="./assets/cameron.jpg" alt="" />
+                <img id="cameron_bild" src="./assets/cameron.jpg" alt="Me" />
               </div>
             </div>
           </div>
@@ -156,19 +159,19 @@
           <form action="https://formspree.io/f/moqbbzbo" method="post" id="form" class="form contact_animate">
             <!-- form control  -->
             <div class="form-control">
-              <input id="lowercase" type="text" name="Name" placeholder="NAME *" required />
+              <input id="lowercase" type="text" name="Name" placeholder="NAME *" maxlength="40" required />
             </div>
             <!-- form control  -->
             <div class="form-control">
-              <input id="lowercase" type="email" name="Email" placeholder="EMAIL *" required />
+              <input id="lowercase" type="email" name="Email" placeholder="EMAIL *" maxlength="100" required />
             </div>
             <!-- form control  -->
             <div class="form-control">
-              <input id="lowercase" type="tel" name="Phone" placeholder="PHONE" />
+              <input id="lowercase" type="tel" name="Phone" placeholder="PHONE" maxlength="30" />
             </div>
             <!-- form control  -->
             <div class="form-control">
-              <textarea id="lowercase" placeholder="MESSAGE *" name="Message" cols="30" rows="10" maxlength="200"
+              <textarea id="lowercase" placeholder="MESSAGE *" name="Message" cols="30" rows="10" maxlength="2000"
                 required></textarea>
             </div>
 
