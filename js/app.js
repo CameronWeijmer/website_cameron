@@ -1,6 +1,5 @@
 // Varaibles
 const text = new SplitType(".animate");
-// const form = document.getElementById("form");
 
 window.onbeforeunload = () => {
   for (const form of document.getElementsByTagName("form")) {
@@ -10,7 +9,6 @@ window.onbeforeunload = () => {
 // Animation
 
 //Title
-
 gsap.to(".char", {
   y: 0,
   stagger: 0.05,
@@ -40,7 +38,6 @@ gsap.utils.toArray(".parallax").forEach((layer) => {
 });
 
 //About
-
 gsap.from(".hidden_animation", {
   scrollTrigger: {
     trigger: ".hidden_animation",
@@ -52,7 +49,6 @@ gsap.from(".hidden_animation", {
 });
 
 //Projects
-
 gsap.from(".proj_parallax", {
   scrollTrigger: {
     trigger: ".proj_parallax",
@@ -64,7 +60,6 @@ gsap.from(".proj_parallax", {
 });
 
 //Contact
-
 gsap.from(".contact_animation", {
   scrollTrigger: {
     trigger: ".contact_animation",

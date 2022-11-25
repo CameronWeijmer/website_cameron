@@ -23,11 +23,9 @@
   padding: 30px 20px;
   border-bottom: 3px solid #3e2f5b;
 }
-.header .nav .logo {
-  font-size: 1.5rem;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: 900;
+.header .nav .left img {
+  width: clamp(100px, 20vw + 100px, 300px);
+  filter: invert(1);
 }
 .header .nav .nav-ul {
   display: flex;
@@ -39,11 +37,13 @@
   text-decoration: none;
   color: #fff;
   text-transform: capitalize;
-  font-size: 1.2rem;
+  font-size: 1.75rem;
   transition: 0.2s ease-in-out;
 }
 .header .nav .nav-ul .item a:hover {
   color: #f4e409;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .main .landing {
@@ -253,26 +253,8 @@
   border: 3px solid #3e2f5b;
   background: transparent;
   border-radius: 5px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Darker Grotesque", sans-serif;
   color: #f4e409;
-}
-.main .contact .form textarea::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #f4e409;
-}
-.main .contact .form textarea::-webkit-input-placeholder:focus::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: blue;
-}
-.main .contact .form textarea:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #f4e409;
-  opacity: 1;
-}
-.main .contact .form textarea:-moz-placeholder:focus:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: blue;
-  opacity: 1;
 }
 .main .contact .form textarea::-moz-placeholder {
   /* Mozilla Firefox 19+ */
@@ -291,6 +273,18 @@
 .main .contact .form textarea:-ms-input-placeholder:focus:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: blue;
+}
+.main .contact .form textarea::-moz-placeholder {
+  font-family: "Bebas Neue", cursive;
+  color: #f4e409;
+}
+.main .contact .form textarea:-ms-input-placeholder {
+  font-family: "Bebas Neue", cursive;
+  color: #f4e409;
+}
+.main .contact .form textarea::placeholder {
+  font-family: "Bebas Neue", cursive;
+  color: #f4e409;
 }
 .main .contact .form .action-btn {
   padding: 10px 20px;
@@ -325,9 +319,12 @@
 
 @media only screen and (max-width: 860px) {
   .header .nav {
-    gap: 40px;
+    gap: 20px;
     flex-direction: column;
     justify-content: center;
+  }
+  .header .nav .nav-ul .item a {
+    font-size: 1.25rem;
   }
   .main .landing .action-btn {
     padding: 8px 12px;
