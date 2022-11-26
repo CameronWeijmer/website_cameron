@@ -25,13 +25,12 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-bottom: 3px solid $contrast-color;
-
     .left {
       img {
-        width: clamp(100px, 20vw + 100px, 300px);
-        filter: invert(1);
+        padding-top: 20px;
+        width: clamp(100px, 20vw + 100px, 200px);
       }
     }
     .nav-ul {
@@ -130,7 +129,7 @@
       }
     }
   }
-  
+
   // projects
   .projects {
     @include layout;
