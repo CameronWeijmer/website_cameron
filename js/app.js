@@ -39,13 +39,9 @@ gsap.utils.toArray(".parallax").forEach((layer) => {
 
 //About
 gsap.from(".hidden_animation", {
-  scrollTrigger: {
-    trigger: ".hidden_animation",
-    start: "top center",
-    end: "bottom bottom",
-  },
   opacity: 0,
-  duration: 1.75,
+  duration: 2,
+  delay: 2.5,
 });
 
 //Projects
